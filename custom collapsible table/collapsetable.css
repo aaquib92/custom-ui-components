@@ -1,0 +1,57 @@
+body {
+  background-color: #f2f6fb;
+
+}
+
+.brd {
+  border-bottom: 1px solid #000;
+}
+
+tr.detail {
+  display: none;
+  width: 100%;
+}
+
+tr.detail div {
+  display: none;
+}
+
+.showmore:hover {
+  cursor: pointer;
+}
+
+.mytable {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.showmore {
+  color: #0fceda;
+  font-size: 16px;
+}
+
+.status-btn-prsnt {
+  background-color: #2fd47526;
+  padding: 10px;
+  color: #2fd475;
+  text-align: center;
+  max-width: 50px;
+
+}
+
+.status-btn-absnt {
+  background-color: #ff7d5e30;
+  padding: 10px;
+  color: #ff7d5e;
+  text-align: center;
+  max-width: 50px;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

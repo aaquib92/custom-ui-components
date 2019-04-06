@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "CircularStdBook";
+    src: url("/fonts/CircularStd-Book.otf");
+    }
+    @font-face {
+      font-family: "CircularStdMedium";
+      src: url("/fonts/CircularStd-Medium.otf");
+      }
+    @font-face {
+        font-family: "CircularStdBold";
+        src: url("/fonts/CircularStd-Bold.otf");
+    }
+      @font-face {
+        font-family: "CircularStdBlack";
+        src: url("/fonts/CircularStd-Black.otf");
+    }
+.tab {
+    overflow: hidden;
+    color: #595c60;
+    font-size: 18px;
+    font-family: CircularStdBook;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: #0fceda;
+    font-size: 18px;
+    font-family: CircularStdBook;
+    border-bottom: 2px solid #0fceda;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    padding: 6px 12px;
+    border-top: none;
+    margin-left:2%;
+  }

@@ -1,0 +1,32 @@
+<html>
+<head>
+<link href ="customtab.css"  rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body  ng-app="myApp" ng-controller="myCtrl">
+ <div class="tab">
+        <button class="{{customtabs=='Muster' ? 'tablinks active' : 'tablinks'}}" ng-click="customtabs = 'Muster'">Attendance Muster</button>
+        <button class="{{customtabs=='Monthly' ? 'tablinks active' : 'tablinks'}}" ng-click="customtabs = 'Monthly'">Monthly Attendance Report</button>
+    </div>
+<div id="Muster"  ng-if="customtabs=='Muster'" class="tabcontent">
+  <h3>Attendance Muster</h3>
+ 
+</div>
+
+<div id="Monthly"  ng-if="customtabs=='Monthly'" class="tabcontent">
+  <h3>Monthly Attendance Report</h3>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+
+$scope.customtabs = 'Muster';
+
+
+});
+</script>
+
+</body>
+</html>
+
